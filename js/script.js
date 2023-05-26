@@ -1,7 +1,3 @@
-"use strict";
-console.log("use strict")
-
-
 //funzione per creare square
 function squareGen(number){
     let square = document.createElement('div');
@@ -20,11 +16,12 @@ difficulty.addEventListener('change', function(){
     difficulty_value= parseInt(difficulty.value);
     console.log(difficulty_value)
     
-}
-)
+})  
+
     const btn= document.getElementById('btn').addEventListener('click',function(){
         const grid= document.getElementById('grid');
         grid.innerHTML="";
+
         for(let i=1; i<= difficulty_value; i++){
             let square = squareGen(i);
             grid.append(square);
@@ -43,6 +40,6 @@ difficulty.addEventListener('change', function(){
         }
         grid.classList.remove('none');
         grid.classList.add('appear');
-});
+    });
 
 //evento bottone che crea il grid
