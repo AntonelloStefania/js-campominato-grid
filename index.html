@@ -9,8 +9,23 @@
         <script defer src="./js/script.js"></script>
     </head>
     <body>
-        <div class="container">
-            <div class="grid"></div>
-        </div>
+        <header>
+            <div class="logo"></div>
+            <select name="difficulty" id="difficulty">
+                <option value="0">difficoltà</option>
+                <option value="100">easy</option>
+                <option value="81">medium</option>
+                <option value="49">hard</option>
+            </select>
+            <button type="button" id="btn">cliccami</button>
+        </header>
+        <main>
+            <div class="container">
+                <div id="grid" class="none"></div>
+            </div>
+        </main>
+        <footer>
+            <span>made with &hearts; <a href="#">from boolean</a></span>
+        </footer>
     </body>
 </html>
