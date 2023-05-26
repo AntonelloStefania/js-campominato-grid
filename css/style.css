@@ -7,7 +7,9 @@
 body{
     height: 100vh;
     position: relative;
-    background-color: lightcyan;
+    background-color: #515760;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Inconsolata', monospace;
    
 }
 
@@ -25,14 +27,16 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1.2rem;
+    padding: 0 5rem;
 }
 
 #grid{
     width: 800px;
     height: 800px;
     flex-wrap: wrap;
-    background-color: rgb(3, 170, 170);
+    background-color: transparent;
+    box-shadow: 11px 11px 32px 10px #1a1a1a;
+    border: 5px solid #423c3c;
 }
 
 
@@ -46,38 +50,44 @@ header{
 
 .square{
    
-    border: 1px solid black;
+    border: 1px solid #564444;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+    font-size: 20px;
 
 }
 
 .easy{
     width: calc(100% /10);
     height: calc(100%/10);
-    background-color: green;
+    background-color: #dff19b;
 }
 
 .medium{
     width: calc(100%/9);
     height: calc(100%/9);
-    background-color: orange;
+    background-color: #95e59c;
 }
 
 .hard{
     width: calc(100%/7);
     height:  calc(100%/7);
-    background-color: rgb(107, 12, 12);
+    background-color: #bbbbbb;
 }
 
 .clicked{
-    background-color: red;
+    background-color: #ef5d5d;
+    box-shadow: 0 0 3px 6px inset #ad0e0e;
 }
 
 #btn{
-    width: 3rem;
+    width: 5rem;
     height: 3rem;
+    border-radius: 1rem;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 footer{
@@ -91,4 +101,15 @@ footer{
     left: 0;
     width: 100%;
     padding-left: 1.4rem;
+}
+
+#difficulty{
+    margin-right: 3rem;
+    width: 6rem;
+    height: 1.5rem;
+    border: 2px solid black;
+}
+
+h1{
+    font-size: 40px;
 }

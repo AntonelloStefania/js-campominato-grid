@@ -14,7 +14,9 @@ function squareGen(number){
 const difficulty = document.getElementById('difficulty');
 let difficulty_value;
 
+//evento scelta difficoltà
 difficulty.addEventListener('change', function(){
+    //recupero valore difficoltà
     difficulty_value= parseInt(difficulty.value);
     console.log(difficulty_value)
     
@@ -23,7 +25,7 @@ difficulty.addEventListener('change', function(){
     for(let i=1; i<= difficulty_value; i++){
         let square = squareGen(i);
         grid.append(square);
-        
+        //grid in base alla difficoltà
         if(difficulty_value === 100){
             square.classList.add('easy');
         } else if (difficulty_value ===81){
@@ -37,9 +39,8 @@ difficulty.addEventListener('change', function(){
         
     }
 });
-//ciclo for per square
-//console.log(grid)
 
+//evento bottone che crea il grid
 const btn= document.getElementById('btn').addEventListener('click',function(){
     grid.classList.remove('none');
     grid.classList.add('appear');
